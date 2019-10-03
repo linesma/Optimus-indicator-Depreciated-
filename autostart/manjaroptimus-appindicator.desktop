@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Manjaro-Optimus Indicator
+Exec=manjaroptimus-appindicator
+GenericName=Desktop switcher for Manjaro-Optimus
+Icon=manjaroptimus-symbolic
+Type=Application
+Categories=Utility
+StartupNotify=false
+Terminal=false

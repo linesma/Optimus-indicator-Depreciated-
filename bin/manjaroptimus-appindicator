@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+import sys
+from os.path import abspath, dirname, join
+
+try:
+    import manjaroptimusindicator
+except ImportError:
+    sys.path.append(abspath(join(dirname(__file__), '..')))
+
+from manjaroptimusindicator import indicator
+indicator.main()
