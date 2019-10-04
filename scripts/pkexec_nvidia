@@ -1,0 +1,2 @@
+#!/bin/sh
+pkexec --disable-internal-agent /usr/local/bin/set-nvidia.sh
