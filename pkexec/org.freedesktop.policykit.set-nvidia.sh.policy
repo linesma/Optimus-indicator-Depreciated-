@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>Manjaro-Optimus Indicator</vendor>
+  <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
+
+  <action id="org.freedesktop.policykit.set-nvidia.sh.policy">
+  
+    <description>Switch to the nVidia GPU</description>
+    
+    <message>Authentication is required to switch to the nVidia GPU</message>
+    
+    <icon_name>manjaroptimus-nvidia-symbolic</icon_name> 
+	
+    <defaults>
+	
+      <allow_any>auth_admin</allow_any>
+	  
+      <allow_inactive>auth_admin</allow_inactive>
+	  
+      <allow_active>auth_admin</allow_active>
+	  
+    </defaults>
+	
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/local/bin/set-nvidia.sh</annotate>
+	
+  </action>
+
+</policyconfig>
