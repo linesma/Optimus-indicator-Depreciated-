@@ -39,7 +39,7 @@ Unfortunately, while the program would run on LXQT, no indicator was displayed. 
 
 1. Install the version of Optimus-Switch for your chosen desktop environment.
 
-2. Install install libappindicator-gtk3 from the Manjaro Community Repository.
+2. Install libappindicator-gtk3 from the Manjaro Community Repository.
 ```
 sudo pacman -S libappindicator-gtk3
 ```
