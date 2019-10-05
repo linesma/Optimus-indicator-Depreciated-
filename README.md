@@ -35,7 +35,7 @@ Unfortunately, while the program would run on LXQT, no indicator was displayed. 
 
 #### Installation
 
-# Before installation, make a back-up of your system using your favorite back-up tool!!!
+#### Before installation, make a back-up of your system using your favorite back-up tool!!!
 
 1. Install the version of Optimus-Switch for your chosen desktop environment.
 
@@ -49,7 +49,7 @@ git clone https://github.com/linesma/manjaroptimus-appindicator.git
 cd manjaroptimus-appindicator
 ```
 
-# If you are using Gnome continue on, if not go to go to the next section.
+#### If you are using Gnome continue on, if not go to go to the next section.
 
 Gnome requires slightly modified scripts to switch between the GPU's. While they are the same scripts in dglt's Optimus-Switch GDM repository, I have included them here for ease of installation.
 
@@ -67,7 +67,7 @@ The setup script will then copy the files to the required directories and adjust
 
 6. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
 
-# For Desktop Environments other than Gnome.
+#### For Desktop Environments other than Gnome.
 
 4. Make the install script executable.
 ```
