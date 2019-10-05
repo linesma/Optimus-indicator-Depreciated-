@@ -30,7 +30,7 @@ This program has been tested on and supports the following Desktop-Environments:
 Unfortunately, while the program would run on LXQT, no indicator was displayed. It may work with tiling window managers, such as Bspwn and Awesome, but it has not been tested on them.
 
 # Requirements
-- The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories] (https://github.com/dglt1).
+- The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
 - libappindicator-gtk3 package from the Manjaro Community Repository.
 
 # Installation
