@@ -27,7 +27,11 @@ This program has been tested on and supports the following Desktop-Environments:
 - Mate
 - LXDE
 
-Unfortunately, while the program would run on LXQT, no indicator was displayed. It may work with tiling window managers, such as Bspwn and Awesome, but it has not been tested on them.
+This program will work with the following tiling window managers.
+
+-Awesome
+
+Unfortunately, while the program would run on LXQT, no indicator was displayed. It may work with tiling window managers, such as Bspwn, but it has not been tested on it.
 
 # Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
@@ -82,6 +86,26 @@ sudo ./setup.py install
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
 6. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
+
+#### Awesome Window Manager Instructions.
+
+Follow instructions 1 through 5. In order to have it start on boot, do the following:
+
+1. Open the following file in your favorite teext editor.
+```
+~/.config/awesome/autorun.sh
+```
+
+2. Add the following line to the end of the file.
+```
+run manjaroptimus-appindicator
+```
+
+3. Save and close the file.
+
+The program will now load when you boot the computer.
+
+4. Reboot the computer to have it load.
 
 # Troubleshooting
 
