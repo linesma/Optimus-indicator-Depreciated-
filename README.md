@@ -29,11 +29,11 @@ This program has been tested on and supports the following Desktop-Environments:
 
 Unfortunately, while the program would run on LXQT, no indicator was displayed. It may work with tiling window managers, such as Bspwn and Awesome, but it has not been tested on them.
 
-#### Requirements
+# Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories] (https://github.com/dglt1).
 - libappindicator-gtk3 package from the Manjaro Community Repository.
 
-#### Installation
+# Installation
 
 #### Before installation, make a back-up of your system using your favorite back-up tool!!!
 
@@ -83,3 +83,12 @@ The setup script will then copy the files to the required directories and adjust
 
 6. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
 
+# Troubleshooting
+
+Q. I am getting an error message saying "Removed /etc/systemd/system/graphical.target.wants/disable-nvidia.service" or "Created symlink...."
+
+A. This is not an error. It is notifying the user that the "set-intel" and the "set-nvidia" scripts are changing a systemd service. The script has still run and changed the graphics card. To stop this notification, run the "setupgn.py" file. It will change the "set-intel" and "set-nvidia" scripts to stop these notifications. 
+
+# Uninstall
+
+This section will be coming soon.
