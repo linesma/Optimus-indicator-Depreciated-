@@ -27,7 +27,7 @@ This program has been tested on and supports the following Desktop-Environments:
 - Mate
 - LXDE
 
-This program will work with the following tiling window managers.
+It has been confirmed to work with the following tiling window managers.
 
 -Awesome
 
