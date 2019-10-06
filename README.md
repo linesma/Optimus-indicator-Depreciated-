@@ -119,6 +119,6 @@ This section will be coming soon.
 
 # Fun Stuff
 
-I have included a second set of icons in the "more-icons/set01" folder. If you want to use them instead of the default, just copy them into the '/usr/share/icons/hicolor/symbolic/apps'. Hopefully I will be adding more icon choices in the future.
+I have included additional sets of icons in the "more-icons" folder. If you want to use one of these sets instead of the default, just copy the set you want into the '/usr/share/icons/hicolor/symbolic/apps'. Hopefully I will be adding more icon choices in the future.
 
 Enjoy!!!
