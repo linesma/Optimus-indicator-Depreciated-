@@ -4,7 +4,7 @@ import os
 from distutils.core import setup
 
 setup(name="manjaroptimusindicator",
-      version="0.9.0",
+      version="1.0.0",
       description="Manjaro-Optimus Application Indicator",
       url='https://github.com/linesma/manjaroptimus-appindicator',
       author='Mark Lines',
