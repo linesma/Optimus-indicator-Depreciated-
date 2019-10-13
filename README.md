@@ -107,6 +107,10 @@ The program will now load when you boot the computer.
 
 4. Reboot the computer to have it load.
 
+## NOTE:
+
+You need to RESTART your laptop to have the graphics card change take effect.
+
 # Troubleshooting
 
 Q. I am getting an error message saying "Removed /etc/systemd/system/graphical.target.wants/disable-nvidia.service" or "Created symlink...."
