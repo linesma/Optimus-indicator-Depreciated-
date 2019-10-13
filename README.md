@@ -14,7 +14,9 @@ Thank you also goes to the members of the Manjaro forums who took the time to he
 
 # About
 
-This is an indicator that resides in the system tray. It displays an icon that shows which graphics card, either nVidia or Intel, is in use, and allows the user to switch between the two via a GUI menu. No matter which Desktop-Environment is being used. #### Make sure to reboot your laptop after changing which graphics card you want to use.
+This is an indicator that resides in the system tray. It displays an icon that shows which graphics card, either nVidia or Intel, is in use, and allows the user to switch between the two via a GUI menu. No matter which Desktop-Environment is being used. 
+
+#### Make sure to reboot your laptop after changing which graphics card you want to use.
 
 # Desktop Environments Supported
 
