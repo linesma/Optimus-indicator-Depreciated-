@@ -6,7 +6,7 @@ Indicator and GUI switch for Optimus-Switch on Manjaro that works in many Deskto
 # Acknowledgements
 This was inspired by Martin Wimpress' Mate Optimus project at: https://github.com/ubuntu-mate/mate-optimus and is a fork of openSUSE's suseprime-appindicator project at: https://github.com/openSUSE/suseprime-appindicator.
 
-It has been updated to work with the Optimus-Switch program by dglt1, links are in the requirements section, on Manjaro.
+It has been updated to work with the Optimus-Switch program by dglt1, links are in the requirements section, on laptops running Manjaro.
 
 Thank you to the authors of the above programs.
 
@@ -107,7 +107,7 @@ The program will now load when you boot the computer.
 
 4. Reboot the computer to have it load.
 
-## NOTE:
+#### NOTE:
 
 You need to RESTART your laptop to have the graphics card change take effect.
 
