@@ -54,7 +54,11 @@ Unfortunately, while the program would run on LXQT, no indicator was displayed. 
 ```
 sudo pacman -S libappindicator-gtk3
 ```
-3. Clone this repository to your computer and go to its folder.
+3. Install the libnotify package from the Manjaro Extra Repository.
+```
+sudo pacman -S libnotify
+```
+4. Clone this repository to your computer and go to its folder.
 ```
 git clone https://github.com/linesma/manjaroptimus-appindicator.git
 cd manjaroptimus-appindicator
@@ -64,39 +68,39 @@ cd manjaroptimus-appindicator
 
 Gnome requires slightly modified scripts to switch between the GPU's. While they are the same scripts in dglt's Optimus-Switch GDM repository, I have included them here for ease of installation.
 
-4. Make the install script executable.
+5. Make the install script executable.
 ```
 chmod a+x setupgn.py
 ```
 
-5. Run the setup script.
+6. Run the setup script.
 ```
 sudo ./setupgn.py install
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-6. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
+7. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
 
 #### For Desktop Environments other than Gnome.
 
-4. Make the install script executable.
+5. Make the install script executable.
 ```
 chmod a+x setup.py
 ```
 
-5. Run the setup script.
+6. Run the setup script.
 ```
 sudo ./setup.py install
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-6. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
+7. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
 
 #### Awesome Window Manager Instructions.
 
-Follow instructions 1 through 5. In order to have it start on boot, do the following:
+Follow instructions 1 through 6. In order to have it start on boot, do the following:
 
 1. Open the following file in your favorite teext editor.
 ```
