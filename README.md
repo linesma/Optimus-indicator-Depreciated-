@@ -38,6 +38,11 @@ Unfortunately, while the program would run on LXQT, no indicator was displayed. 
 # Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
 - libappindicator-gtk3 package from the Manjaro Community Repository.
+- libnotify package from the Manjaro Extra Repository.
+
+# Additional requirement for Gnome
+
+- [Kstatusnotifieritem/appindicator](https://extensions.gnome.org/extension/615/appindicator-support/) extension. This "re-adds" the removed system tray. Without this extension enabled, the icon will not show in the top bar or "system tray" section of Dash-to-Dock.
 
 # Installation
 
