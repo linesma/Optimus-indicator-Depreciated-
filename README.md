@@ -43,7 +43,7 @@ It has been confirmed to work with the following tiling window managers.
 
 It may work with tiling window managers, such as Bspwn and i3, but it has not been tested on them.
 
-<sup>1</sup>This program will run on LXQT. However, the incorrect icon, a gear instead of the GPU logo, is displayed in the system tray. Despite the improper icon, it will switch the GPU's and display notifications properly.
+<sup>1</sup>This program will run on LXQT. However, an incorrect icon, a gear instead of the GPU logo, is displayed in the system tray. Despite the improper icon, it will switch the GPU's and display notifications properly.
 
 # Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
