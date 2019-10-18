@@ -1,7 +1,7 @@
 <img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="120" />
 
 # Manjaro-Optimus Indicator
-## Indicator and GUI switch for Optimus-Switch on Manjaro that works in many Desktop-Environments.
+## Indicator and GUI switch for Optimus-Switch on Manjaro.
 </br>
 
 ![Manjaro-Optimus Indicator](https://github.com/linesma/manjaroptimus-appindicator/blob/master/screenshots/screenshot.jpg)     
