@@ -120,7 +120,7 @@ The setup script will then copy the files to the required directories and adjust
 
 Follow instructions 1 through 6. In order to have it start on boot, do the following:
 
-1. Open the following file in your favorite teext editor.
+1. Open the following file in your favorite text editor.
 ```
 ~/.config/awesome/autorun.sh
 ```
