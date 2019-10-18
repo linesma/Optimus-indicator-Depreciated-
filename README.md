@@ -4,6 +4,8 @@
 ## Indicator and GUI switch for Optimus-Switch on Manjaro that works on multiple Desktop Environments.
 </br>
 
+
+
 ![Manjaro-Optimus Indicator](https://github.com/linesma/manjaroptimus-appindicator/blob/master/screenshots/screenshot.jpg)     
 
 # Acknowledgements
