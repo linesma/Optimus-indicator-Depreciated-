@@ -10,11 +10,13 @@ Indicator and GUI switch for Optimus-Switch on Manjaro that works in many Deskto
 ![Manjaro-Optimus Indicator](https://github.com/linesma/manjaroptimus-appindicator/blob/master/screenshots/screenshot.jpg)     
 
 # Acknowledgements
-This was inspired by Martin Wimpress' Mate Optimus project at: https://github.com/ubuntu-mate/mate-optimus and is a fork of openSUSE's suseprime-appindicator project at: https://github.com/openSUSE/suseprime-appindicator.
+This was inspired by Martin Wimpress' [Mate Optimus](https://github.com/ubuntu-mate/mate-optimus) project and is a fork of openSUSE's [suseprime-appindicator](https://github.com/openSUSE/suseprime-appindicator) project.
 
 It has been updated to work with the Optimus-Switch program by dglt1, links are in the requirements section, on laptops running Manjaro.
 
 Thank you to the authors of the above programs.
+
+New default icons and the program logo were crafted with love by SGS from the Manjaro Forums. You can find more of his wonderful work here: [GitHub](https://github.com/sgse), [GitLab](https://gitlab.com/SGSm/manjaro-wallpaper/), and [The Manjaro Forums](https://forum.manjaro.org/t/wallpaper-and-more-by-sgs/43181). Thank you so much for sharing your time and talent!
 
 Thank you also goes to the members of the Manjaro forums who took the time to help me learn about and troubleshoot python. I truly do appreciate it.
 
@@ -140,6 +142,12 @@ This section will be coming soon.
 
 # Fun Stuff
 
-I have included additional sets of icons in the "more-icons" folder. If you want to use one of these sets instead of the default, just copy the set you want into the '/usr/share/icons/hicolor/symbolic/apps'. Hopefully I will be adding more icon choices in the future.
+I have included additional sets of icons in the "more-icons" folder. If you want to use one of these sets instead of the default, just copy the set you want into the '/usr/share/icons/hicolor/symbolic/apps'. For example:
+
+```
+sudo cp ~/manjaroptimus/more-icons/set01/*.svg /usr/share/icons/hicolor/symbolic/apps
+```
+
+Hopefully I will be adding more icon choices in the future.
 
 Enjoy!!!
