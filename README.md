@@ -1,4 +1,4 @@
-<img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="120" />
+<img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="256" />
 
 # Manjaro-Optimus Indicator
 ## Indicator and GUI switch for Optimus-Switch on Manjaro.
