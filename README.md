@@ -6,7 +6,7 @@
 
 
 
-![Manjaro-Optimus Indicator](https://github.com/linesma/manjaroptimus-appindicator/blob/master/screenshots/screenshot.jpg)     
+![Manjaro-Optimus Indicator](https://github.com/linesma/manjaroptimus-appindicator/blob/master/screenshots/flow2.jpg)     
 
 # Acknowledgements
 This was inspired by Martin Wimpress' [Mate Optimus](https://github.com/ubuntu-mate/mate-optimus) project and is a fork of openSUSE's [suseprime-appindicator](https://github.com/openSUSE/suseprime-appindicator) project.
