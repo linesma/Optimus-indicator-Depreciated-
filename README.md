@@ -157,7 +157,7 @@ I have included additional sets of icons in the "more-icons" folder. If you want
 ```
 sudo cp ~/manjaroptimus/more-icons/set01/*.svg /usr/share/icons/hicolor/symbolic/apps
 ```
-
-Hopefully I will be adding more icon choices in the future.
+The original icons I used in the initial release are included in the folder "more-icons/set-original".
+I will be adding more icon choices in the future.
 
 Enjoy!!!
