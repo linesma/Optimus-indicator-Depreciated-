@@ -36,12 +36,15 @@ This program has been tested on and supports the following Desktop-Environments:
 - Cinnamon
 - Mate
 - LXDE
+- LXQT<sup>1</sup>
 
 It has been confirmed to work with the following tiling window managers.
 
 -Awesome
 
-Unfortunately, while the program would run on LXQT, no indicator was displayed. It may work with tiling window managers, such as Bspwn, but it has not been tested on it.
+It may work with tiling window managers, such as Bspwn and i3, but it has not been tested on them.
+
+<sup>1</sup>This program will run on LXQT. However, the incorrect icon, a gear instead of the GPU logo, is displayed in the system tray. Despite the improper icon, it will switch the GPU's and display notifications properly.
 
 # Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
@@ -50,7 +53,14 @@ Unfortunately, while the program would run on LXQT, no indicator was displayed. 
 
 # Additional requirement for Gnome
 
-- [Kstatusnotifieritem/appindicator](https://extensions.gnome.org/extension/615/appindicator-support/) extension. This "re-adds" the removed system tray. Without this extension enabled, the icon will not show in the top bar or "system tray" section of Dash-to-Dock.
+- [Kstatusnotifieritem/appindicator](https://extensions.gnome.org/extension/615/appindicator-support/) extension. This "re-adds" the removed system tray. Without this extension enabled, the icon will not show in the top bar or the "system tray" section of Dash-to-Dock.
+
+# Additional requirement for LXQT
+
+- LXQT also requires the install of the `gtk3` package from the Manjaro Extra Repository.
+```
+sudo pacman -S gtk3
+```
 
 # Installation
 
