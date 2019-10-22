@@ -145,7 +145,7 @@ A. This is not an error. It is notifying the user that the "set-intel" and the "
 
 # Uninstall
 
-#### Note: This will not uninstall the Optimus-Switch GPU solution. This only uninstalls this indicator/ switching program.
+#### Note: This will not uninstall the Optimus-Switch GPU solution. This only uninstalls this indicator program.
 
 1. Open the terminal and type.
 ```
