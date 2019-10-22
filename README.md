@@ -159,7 +159,7 @@ chmod a+x uninstall-moi.sh
 ```
 sudo ./uninstall-moi.sh
 ```
-4. Reboot your laptop.
+4. Reboot your laptop to have the changes take affect.
 
 
 # Fun Stuff
