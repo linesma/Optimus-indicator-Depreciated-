@@ -23,8 +23,6 @@ Thank you also goes to the members of the Manjaro forums who took the time to he
 
 This is an indicator that resides in the system tray. It displays an icon that shows which graphics card, either nVidia or Intel, is in use, and allows the user to switch between the two via a GUI menu. No matter which Desktop-Environment is being used. 
 
-#### Make sure to reboot your laptop after changing which graphics card you want to use.
-
 # Desktop Environments Supported
 
 This program has been tested on and supports the following Desktop-Environments:
@@ -147,7 +145,22 @@ A. This is not an error. It is notifying the user that the "set-intel" and the "
 
 # Uninstall
 
-This section will be coming soon.
+#### Note: This will not uninstall the Optimus-Switch GPU solution. This only uninstalls this indicator/ switching program.
+
+1. Open the terminal and type.
+```
+cd manjaroptimus-appindicator
+```
+2. Make the uninstall script executable.
+```
+chmod a+x uninstall-moi.sh
+```
+3. Run the uninstall script.
+```
+sudo ./uninstall-moi.sh
+```
+4. Reboot your laptop.
+
 
 # Fun Stuff
 
