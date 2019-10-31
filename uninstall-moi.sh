@@ -23,3 +23,4 @@ sleep 1
 echo 'Manjaro-Optimus Indicator is now uninstalled.'
 echo 'To complete the uninstall process, please restart your computer'
 
+rm -rf uninstall-moi.sh
