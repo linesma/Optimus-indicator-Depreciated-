@@ -25,6 +25,7 @@ APPINDICATOR_ID = 'manjaroptimusindicator'
 intel_notif = ('Switching to the Intel iGPU')
 nvidia_notif = ('Switching to the nVidia GPU')
 reboot_notif = ('Please reboot for changes to take effect')
+reboot_notifb = ('Your system will now reboot')
 error_head = ('Error occured')
 
 drivers = {
@@ -70,10 +71,16 @@ def build_menu():
         item_nvidia = gtk.MenuItem.new_with_label(_('Switch to nVidia GPU'))
         item_nvidia.connect('activate', nvidia)
         menu.append(item_nvidia)
+        item_nvidiab = gtk.MenuItem.new_with_label(_('Switch to nVidia GPU and reboot'))
+        item_nvidiab.connect('activate', nvidiab)
+        menu.append(item_nvidiab)
     if (check_current(drivers) != 'intel open source technology center'):
         item_intel = gtk.MenuItem.new_with_label(_('Switch to Intel iGPU'))
         item_intel.connect('activate', intel)
         menu.append(item_intel)
+        item_intelb = gtk.MenuItem.new_with_label(_('Switch to Intel iGPU and reboot'))
+        item_intelb.connect('activate', intelb)
+        menu.append(item_intelb)
     menu.show_all()
     return menu
 
@@ -86,12 +93,32 @@ def nvidia(_):
     else:
         notify.Notification.new(error_head, output.decode("utf-8"), 'dialog-warning').show()
 
+def nvidiab(_):
+    result, output, error, status = glib.spawn_command_line_sync('/usr/share/manjaroptimus-appindicator/scripts/pkexec_nvidia')
+    if (error):
+        notify.Notification.new(error_head, error.decode("utf-8"), 'dialog-warning').show()
+    elif (result):
+        notify.Notification.new(nvidia_notif, reboot_notifb, '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg').show()
+        glib.spawn_command_line_sync('/usr/share/manjaroptimus-appindicator/scripts/reboot.sh')
+    else:
+        notify.Notification.new(error_head, output.decode("utf-8"), 'dialog-warning').show()
+
 def intel(_):
     result, output, error, status = glib.spawn_command_line_sync('/usr/share/manjaroptimus-appindicator/scripts/pkexec_intel')
     if (error):
         notify.Notification.new(error_head, error.decode("utf-8"), 'dialog-warning').show()
     elif (result):
         notify.Notification.new(intel_notif, reboot_notif, '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg').show()
+    else:
+        notify.Notification.new(error_head, output.decode("utf-8"), 'dialog-warning').show()
+
+def intelb(_):
+    result, output, error, status = glib.spawn_command_line_sync('/usr/share/manjaroptimus-appindicator/scripts/pkexec_intel')
+    if (error):
+        notify.Notification.new(error_head, error.decode("utf-8"), 'dialog-warning').show()
+    elif (result):
+        notify.Notification.new(intel_notif, reboot_notifb, '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg').show()
+        glib.spawn_command_line_sync('/usr/share/manjaroptimus-appindicator/scripts/reboot.sh')
     else:
         notify.Notification.new(error_head, output.decode("utf-8"), 'dialog-warning').show()
 
