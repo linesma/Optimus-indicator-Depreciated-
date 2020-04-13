@@ -30,7 +30,7 @@ error_head = ('Error occured')
 
 drivers = {
     'nvidia corporation': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg',
-    'intel open source technology center': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
+    'intel': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
     'other': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg',
 }
 
@@ -55,7 +55,7 @@ def check_current(drivers):
 def main():
     if (check_current(drivers) == 'nvidia corporation'):
         icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg'
-    elif (check_current(drivers) == 'intel open source technology center'):
+    elif (check_current(drivers) == 'intel'):
         icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg'
     else:
         icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg'
@@ -74,7 +74,7 @@ def build_menu():
         item_nvidiab = gtk.MenuItem.new_with_label(_('Switch to nVidia GPU and reboot'))
         item_nvidiab.connect('activate', nvidiab)
         menu.append(item_nvidiab)
-    if (check_current(drivers) != 'intel open source technology center'):
+    if (check_current(drivers) != 'intel'):
         item_intel = gtk.MenuItem.new_with_label(_('Switch to Intel iGPU'))
         item_intel.connect('activate', intel)
         menu.append(item_intel)
