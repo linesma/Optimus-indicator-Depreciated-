@@ -52,7 +52,7 @@ def check_current(drivers):
         # list is not hard coded here, but use keys in array
         if (debug == True):
             print('find', s, 'in', drivers.keys(), "...?" ) # debug
-        if s in drivers.keys():
+        if s in drivers:
             return s
     return 'other' # not found
 
