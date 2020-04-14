@@ -53,12 +53,7 @@ def check_current(drivers):
     return 'other' # not found
 
 def main():
-    if (check_current(drivers) == 'nvidia corporation'):
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg'
-    elif (check_current(drivers) == 'intel'):
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg'
-    else:
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg'
+    icon = drivers.get(check_current(drivers), 'other')
     indicator = appindicator.Indicator.new(APPINDICATOR_ID, icon, appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(build_menu())
