@@ -30,6 +30,7 @@ error_head = ('Error occured')
 
 drivers = {
     'nvidia corporation': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg',
+    'intel open source technology center': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
     'intel': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
     'other': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg',
 }
