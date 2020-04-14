@@ -35,6 +35,7 @@ drivers = {
     'other': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg',
 }
 
+debug=False
 
 def check_current(drivers):
     import subprocess
@@ -45,10 +46,12 @@ def check_current(drivers):
     output = str(proc.communicate()[0]).split("\n")
     # or we can use `re`
     output = [ s.split(':')[1].strip().lower() for s in output if 'OpenGL vendor string' in s ]
-    print(output) # debug
+    if (debug == True):
+        print(output) # debug
     for s in output:
         # list is not hard coded here, but use keys in array
-        print('find', s, 'in', drivers.keys(), "...?" ) # debug
+        if (debug == True):
+            print('find', s, 'in', drivers.keys(), "...?" ) # debug
         if s in drivers.keys():
             return s
     return 'other' # not found
