@@ -69,7 +69,7 @@ def build_menu():
         item_nvidiab = gtk.MenuItem.new_with_label(_('Switch to nVidia GPU and reboot'))
         item_nvidiab.connect('activate', nvidiab)
         menu.append(item_nvidiab)
-    if (check_current(drivers) != 'intel'):
+    elif (check_current(drivers) != 'other'):
         item_intel = gtk.MenuItem.new_with_label(_('Switch to Intel iGPU'))
         item_intel.connect('activate', intel)
         menu.append(item_intel)
