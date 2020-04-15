@@ -30,10 +30,12 @@ error_head = ('Error occured')
 
 drivers = {
     'nvidia corporation': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg',
+    'intel open source technology center': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
     'intel': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg',
     'other': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg',
 }
 
+debug=False
 
 def check_current(drivers):
     import subprocess
@@ -44,21 +46,18 @@ def check_current(drivers):
     output = str(proc.communicate()[0]).split("\n")
     # or we can use `re`
     output = [ s.split(':')[1].strip().lower() for s in output if 'OpenGL vendor string' in s ]
-    print(output) # debug
+    if (debug == True):
+        print(output) # debug
     for s in output:
         # list is not hard coded here, but use keys in array
-        print('find', s, 'in', drivers.keys(), "...?" ) # debug
-        if s in drivers.keys():
+        if (debug == True):
+            print('find', s, 'in', drivers.keys(), "...?" ) # debug
+        if s in drivers:
             return s
     return 'other' # not found
 
 def main():
-    if (check_current(drivers) == 'nvidia corporation'):
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-nvidia-symbolic.svg'
-    elif (check_current(drivers) == 'intel'):
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-intel-symbolic.svg'
-    else:
-        icon = '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg'
+    icon = drivers.get(check_current(drivers), 'other')
     indicator = appindicator.Indicator.new(APPINDICATOR_ID, icon, appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(build_menu())
@@ -74,7 +73,7 @@ def build_menu():
         item_nvidiab = gtk.MenuItem.new_with_label(_('Switch to nVidia GPU and reboot'))
         item_nvidiab.connect('activate', nvidiab)
         menu.append(item_nvidiab)
-    if (check_current(drivers) != 'intel'):
+    elif (check_current(drivers) != 'other'):
         item_intel = gtk.MenuItem.new_with_label(_('Switch to Intel iGPU'))
         item_intel.connect('activate', intel)
         menu.append(item_intel)
