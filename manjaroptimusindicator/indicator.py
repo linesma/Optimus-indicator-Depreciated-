@@ -35,7 +35,7 @@ drivers = {
     'other': '/usr/share/icons/hicolor/symbolic/apps/manjaroptimus-symbolic.svg',
 }
 
-debug=False
+debug=False         # debug flag
 current_driver=None # procured driver string
 
 def check_current(drivers):
