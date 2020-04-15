@@ -36,8 +36,12 @@ drivers = {
 }
 
 debug=False
+current_driver=None # procured driver string
 
 def check_current(drivers):
+    global current_driver
+    if current_driver: # return current_driver if already known
+        return current_driver
     import subprocess
     try:
         proc = subprocess.Popen(['glxinfo','-B' ], text=True, stdout = subprocess.PIPE)
@@ -53,8 +57,11 @@ def check_current(drivers):
         if (debug == True):
             print('find', s, 'in', drivers.keys(), "...?" ) # debug
         if s in drivers:
-            return s
-    return 'other' # not found
+            current_driver = s
+            break
+    if not current_driver: # not found
+        current_driver = 'other'
+    return current_driver
 
 def main():
     icon = drivers.get(check_current(drivers), 'other')
