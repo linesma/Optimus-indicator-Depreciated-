@@ -1,7 +1,7 @@
 <img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="256" />
 
-# Manjaro-Optimus Indicator
-## Indicator and GUI switch for Optimus-Switch on Manjaro that works in multiple Desktop Environments.
+# Optimus Indicator IN BETA WHILE TRANSITIONING FROM FOCUSING ON MANJARO TO A WIDER RANGE OF ARCH BASED DISTROS
+## Indicator and GUI switch for Optimus-Switch for Arch based distros that works in multiple Desktop Environments.
 </br>
 
 
@@ -11,11 +11,11 @@
 # Acknowledgements
 This was inspired by Martin Wimpress' [Mate Optimus](https://github.com/ubuntu-mate/mate-optimus) project and is a fork of openSUSE's [suseprime-appindicator](https://github.com/openSUSE/suseprime-appindicator) project.
 
-It has been updated to work with the Optimus-Switch program by dglt1, links are in the requirements section, on laptops running Manjaro.
+It has been updated to work with the Optimus-Switch program by dglt1, links are in the requirements section, on laptops running Arch or derivatives.
 
 Thank you to the authors of the above programs.
 
-New default icons and the program logo were crafted with love by SGS from the Manjaro Forums. You can find more of his wonderful work here: [GitHub](https://github.com/sgse), [GitLab](https://gitlab.com/SGSm/manjaro-wallpaper/), and [The Manjaro Forums](https://forum.manjaro.org/t/wallpaper-and-more-by-sgs/43181). Thank you so much for sharing your time and talent!
+New default icons and the program logo were crafted with love by SGS from the Manjaro Forums. You can find more of his wonderful work here: [GitHub](https://github.com/sgse), [GitLab](https://gitlab.com/SGSm/manjaro-wallpaper/), and [The Garuda Linux Forums](https://forum.garudalinux.in/). Thank you so much for sharing your time and talent!
 
 Thank you also goes to the members of the Manjaro forums who took the time to help me learn about and troubleshoot python. I truly do appreciate it.
 
@@ -45,9 +45,9 @@ It may work with tiling window managers, such as Bspwn and i3, but it has not be
 
 # Requirements
 - The appropriate version of Optimus-Switch for your desktop envirnoment [Optimus-Switch Repositories](https://github.com/dglt1).
-- libappindicator-gtk3 package from the Manjaro Community Repository.
-- libappindicator-gtk2 package from the Manjaro Community Repository.
-- libnotify package from the Manjaro Extra Repository.
+- libappindicator-gtk3 package from the Arch Community Repository.
+- libappindicator-gtk2 package from the Arch Community Repository.
+- libnotify package from the Arch Extra Repository.
 
 # Additional requirement for Gnome
 
@@ -55,7 +55,7 @@ It may work with tiling window managers, such as Bspwn and i3, but it has not be
 
 # Additional requirement for LXQT
 
-- LXQT also requires the install of the `gtk3` package from the Manjaro Extra Repository.
+- LXQT also requires the install of the `gtk3` package from the Arch Extra Repository.
 ```
 sudo pacman -S gtk3
 ```
@@ -66,22 +66,22 @@ sudo pacman -S gtk3
 
 1. Install the version of Optimus-Switch for your chosen desktop environment.
 
-2. Install libappindicator-gtk3 from the Manjaro Community Repository.
+2. Install libappindicator-gtk3 from the Arch Community Repository.
 ```
 sudo pacman -S libappindicator-gtk3
 ```
-3. Install libappindicator-gtk2 from the Manajro Community Repositry
+3. Install libappindicator-gtk2 from the Arch Community Repositry
 ```
 sudo pacman -S libappindicator-gtk2
 ```
-4. Install the libnotify package from the Manjaro Extra Repository.
+4. Install the libnotify package from the Arch Extra Repository.
 ```
 sudo pacman -S libnotify
 ```
 5. Clone this repository to your computer and go to its folder.
 ```
-git clone https://github.com/linesma/manjaroptimus-appindicator.git
-cd manjaroptimus-appindicator
+git clone https://github.com/linesma/Optimus-indicator.git
+cd Optimus-indicator
 ```
 
 #### If you are using Gnome continue on, if not go to go to the next section.
@@ -100,7 +100,7 @@ sudo ./setupgn.py install
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-8. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
+8. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
 
 #### For Desktop Environments other than Gnome.
 
@@ -116,7 +116,7 @@ sudo ./setup.py install
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-8. Once the install script has finished. Reboot the computer. Manjaro-Optimus Indicator is set to autostart when the computer boots.
+8. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
 
 #### Awesome Window Manager Instructions.
 
@@ -129,7 +129,7 @@ Follow instructions 1 through 7 above. In order to have it start on boot, do the
 
 2. Add the following line to the end of the file.
 ```
-run manjaroptimus-appindicator
+run optimus-appindicator
 ```
 
 3. Save and close the file.
@@ -154,7 +154,7 @@ A. This is not an error. It is notifying the user that the "set-intel" and the "
 
 1. Open the terminal and type.
 ```
-cd manjaroptimus-appindicator
+cd Optimus-indicator
 ```
 2. Make the uninstall script executable.
 ```
@@ -172,7 +172,7 @@ sudo ./uninstall-moi.sh
 I have included additional sets of icons in the "more-icons" folder. If you want to use one of these sets instead of the default, just copy the set you want into the '/usr/share/icons/hicolor/symbolic/apps'. For example:
 
 ```
-sudo cp ~/manjaroptimus-appindicator/more-icons/set01/*.svg /usr/share/icons/hicolor/symbolic/apps
+sudo cp ~/Optimus-indicator/more-icons/set01/*.svg /usr/share/icons/hicolor/symbolic/apps
 ```
 The original icons I used in the initial release are included in the folder "more-icons/set-original".
 I will be adding more icon choices in the future.
