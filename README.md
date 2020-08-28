@@ -129,7 +129,7 @@ Follow instructions 1 through 7 above. In order to have it start on boot, do the
 
 2. Add the following line to the end of the file.
 ```
-run optimus-appindicator
+run manjaroptimus-appindicator
 ```
 
 3. Save and close the file.
