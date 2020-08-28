@@ -1,4 +1,4 @@
-<img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="256" />
+<img src="https://github.com/linesma/Optimus-indicator/blob/master/Logo/Optimus-Indicator-logo.png" align="left" width="256" />
 
 # Optimus Indicator
 ## Indicator and GUI switch for Optimus-Switch for Arch based distros that works in multiple Desktop Environments.
