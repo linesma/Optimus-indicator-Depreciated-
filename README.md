@@ -1,6 +1,6 @@
 <img src="https://github.com/linesma/manjaroptimus-appindicator/blob/master/Logo/manjaroptimus-logo02b.png" align="left" width="256" />
 
-# Optimus Indicator IN BETA WHILE TRANSITIONING FROM FOCUSING ON MANJARO TO A WIDER RANGE OF ARCH BASED DISTROS
+# Optimus Indicator
 ## Indicator and GUI switch for Optimus-Switch for Arch based distros that works in multiple Desktop Environments.
 </br>
 
