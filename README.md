@@ -39,7 +39,7 @@ It has been confirmed to work with the following tiling window managers.
 
 -Awesome
 
-It may work with tiling window managers, such as Bspwn and i3, but it has not been tested on them.
+It may work with other tiling window managers, such as Bspwn and i3, but it has not been tested on them.
 
 <sup>1</sup>This program will run on LXQT. However, an incorrect icon, a gear instead of the GPU logo, is displayed in the system tray. Despite the improper icon, it will switch the GPU's and display notifications properly.
 
@@ -51,11 +51,11 @@ It may work with tiling window managers, such as Bspwn and i3, but it has not be
 
 # Additional requirement for Gnome
 
-- [Kstatusnotifieritem/appindicator](https://extensions.gnome.org/extension/615/appindicator-support/) extension. This "re-adds" the removed system tray. Without this extension enabled, the icon will not show in the top bar or the "system tray" section of Dash-to-Dock.
+- [Kstatusnotifieritem/appindicator](https://extensions.gnome.org/extension/615/appindicator-support/) extension. This "re-adds" the removed system tray. Without this extension enabled, the icon will not show in the top bar or the "system tray" section of Dash-to-Panel.
 
 # Additional requirement for LXQT
 
-- LXQT also requires the install of the `gtk3` package from the Arch Extra Repository.
+- LXQT also requires the installation of the `gtk3` package from the Arch Extra Repository.
 ```
 sudo pacman -S gtk3
 ```
