@@ -18,7 +18,7 @@ rm -rf /usr/share/manjaroptimus-appindicator/scripts/reboot.sh
 rm -rf /usr/share/polkit-1/actions/org.freedesktop.policykit.set-nvidia.sh.policy
 rm -rf /usr/share/polkit-1/actions/org.freedesktop.policykit.set-intel.sh.policy
 rm -rf /etc/xdg/autostart/manjaroptimus-appindicator.desktop
-rm -rf /ussr/bin/manjaroptimus-appindicator
+rm -rf /usr/bin/manjaroptimus-appindicator
 
 sleep 1
 echo 'Optimus Indicator is now uninstalled.'
