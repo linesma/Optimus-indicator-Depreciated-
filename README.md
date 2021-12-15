@@ -48,6 +48,7 @@ It may work with other tiling window managers, such as Bspwn and i3, but it has 
 - libappindicator-gtk3 package from the Arch Community Repository.
 - libappindicator-gtk2 package from the Arch Community Repository.
 - libnotify package from the Arch Extra Repository.
+- mesa-utils package from the Arch Extra Repository.
 
 # Additional requirement for Gnome
 
@@ -78,7 +79,11 @@ sudo pacman -S libappindicator-gtk2
 ```
 sudo pacman -S libnotify
 ```
-5. Clone this repository to your computer and go to its folder.
+5. Install the mesa-utils package from the Arch Extra Repositiry.
+```
+sudo pacman -S mesa-utils
+```
+6. Clone this repository to your computer and go to its folder.
 ```
 git clone https://github.com/linesma/Optimus-indicator.git
 cd Optimus-indicator
@@ -88,35 +93,35 @@ cd Optimus-indicator
 
 Gnome requires slightly modified scripts to switch between the GPU's. While they are the same scripts in dglt's Optimus-Switch GDM repository, I have included them here for ease of installation.
 
-6. Make the install script executable.
+7. Make the install script executable.
 ```
 chmod a+x setupgn.py
 ```
 
-7. Run the setup script.
+8. Run the setup script.
 ```
 sudo ./setupgn.py install
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-8. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
+9. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
 
 #### For Desktop Environments other than Gnome.
 
-6. Make the install script executable.
+7. Make the install script executable.
 ```
 chmod a+x setup.py
 ```
 
-7. Run the setup script.
+8. Run the setup script.
 ```
 sudo ./setup.py install
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
 
-8. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
+9. Once the install script has finished. Reboot the computer. Optimus Indicator is set to autostart when the computer boots.
 
 #### Awesome Window Manager Instructions.
 
