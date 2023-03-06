@@ -1,22 +1,29 @@
 #!/usr/bin/python3
 
 import os
-from distutils.core import setup
+from setuptools import setup, find_packages
 
-setup(name="manjaroptimusindicator",
-      version="3.0",
-      description="Manjaro-Optimus Application Indicator",
-      url='https://github.com/linesma/manjaroptimus-appindicator',
-      author='Mark Lines',
-      license='GPLv3',
-      packages=["manjaroptimusindicator"],
-      data_files=[
-          ('/usr/share/icons/hicolor/symbolic/apps/', ['icons/manjaroptimus-symbolic.svg', 'icons/manjaroptimus-intel-symbolic.svg', 'icons/manjaroptimus-nvidia-symbolic.svg']),
-          ('/usr/share/manjaroptimus-appindicator/scripts/', ['scripts/pkexec_nvidia', 'scripts/pkexec_intel', 'scripts/reboot.sh']),
-          ('/usr/local/bin/', ['gnome-script/set-intel.sh', 'gnome-script/set-nvidia.sh']), 
-          ('/usr/share/polkit-1/actions/', ['pkexec/org.freedesktop.policykit.set-intel.sh.policy', 'pkexec/org.freedesktop.policykit.set-nvidia.sh.policy']),
-          ('/etc/xdg/autostart/', ['autostart/manjaroptimus-appindicator.desktop'])],
-      scripts=["bin/manjaroptimus-appindicator"]
+setup(
+    name="Optimus-indicator",
+    version="3.0",
+    description="Manjaro-Optimus Application Indicator",
+    url='https://github.com/linesma/manjaroptimus-appindicator',
+    author='Mark Lines',
+    license='GPLv3',
+    packages=["Optimus-indicator", "Optimus-indicator.manjaroptimusindicator", "Optimus-indicator.scripts", "Optimus-indicator.gnome-script", "Optimus-indicator.autostart", "Optimus-indicator.bin", "Optimus-indicator.icons", "Optimus-indicator.pkexec"],
+    include_package_data=True,
+    package_data={
+            "Optimus-indicator": [
+		"manjaroptimusindicator/*",
+            "icons/*.svg",
+            "scripts/*",
+            "autostart/*.desktop",
+		"pkexec/*",
+            "bin/*",
+            "gnome-script/*"
+        ]
+    },
+    scripts=["bin/manjaroptimus-appindicator"],
 )
 
 os.chmod ('/etc/xdg/autostart/manjaroptimus-appindicator.desktop', 0o755)
