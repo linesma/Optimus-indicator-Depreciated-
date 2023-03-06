@@ -93,14 +93,15 @@ cd Optimus-indicator
 
 Gnome requires slightly modified scripts to switch between the GPU's. While they are the same scripts in dglt's Optimus-Switch GDM repository, I have included them here for ease of installation.
 
-7. Make the install script executable.
+7. Make the package.
 ```
-chmod a+x setupgn.py
+python setupgn.py sdist
 ```
+This will generate a package that should be named `Optimus-indicator-3.0.tar.gz`
 
-8. Run the setup script.
+8. Install the Package.
 ```
-sudo ./setupgn.py install
+pip install Optimus-indicator-3.0.tar.gz
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
@@ -109,14 +110,15 @@ The setup script will then copy the files to the required directories and adjust
 
 #### For Desktop Environments other than Gnome.
 
-7. Make the install script executable.
+7. Make the package.
 ```
-chmod a+x setup.py
+python setup.py sdist
 ```
+This will generate a package that should be named `Optimus-indicator-3.0.tar.gz`
 
-8. Run the setup script.
+8. Install the Package.
 ```
-sudo ./setup.py install
+pip install Optimus-indicator-3.0.tar.gz
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
