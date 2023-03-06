@@ -26,7 +26,7 @@ setup(
     scripts=["bin/manjaroptimus-appindicator"],
     entry_points={
         "console_scripts": [
-            "post_install=Optimus-indicator.post_install:main"
+            "post_install=post_install:main"
         ]
     }
 )
