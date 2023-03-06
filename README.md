@@ -95,13 +95,13 @@ Gnome requires slightly modified scripts to switch between the GPU's. While they
 
 7. Make the package.
 ```
-python setupgn.py sdist
+sudo python setupgn.py sdist
 ```
 This will generate a package that should be named `Optimus-indicator-3.0.tar.gz`
 
 8. Install the Package.
 ```
-pip install Optimus-indicator-3.0.tar.gz
+sudo pip install Optimus-indicator-3.0.tar.gz
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
@@ -112,13 +112,13 @@ The setup script will then copy the files to the required directories and adjust
 
 7. Make the package.
 ```
-python setup.py sdist
+sudo python setup.py sdist
 ```
 This will generate a package that should be named `Optimus-indicator-3.0.tar.gz`
 
 8. Install the Package.
 ```
-pip install Optimus-indicator-3.0.tar.gz
+sudo pip install Optimus-indicator-3.0.tar.gz
 ```
 
 The setup script will then copy the files to the required directories and adjust their permissions as needed.
