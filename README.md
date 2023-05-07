@@ -1,3 +1,5 @@
+Since I am self taught on how Python works, and I do not have the time to learn the new changes in the latest Python release, I will no longer be updating this project. If someone would like to fork and update it, please let me know. Thank you.
+
 <img src="https://github.com/linesma/Optimus-indicator/blob/master/Logo/Optimus-Indicator-logo.png" align="left" width="256" />
 
 # Optimus Indicator
